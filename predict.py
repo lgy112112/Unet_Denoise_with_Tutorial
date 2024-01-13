@@ -13,7 +13,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # 加载模型
 model = UNet()  # 确保 UNet 类已经定义
-model.load_state_dict(torch.load('/content/unet_model.pth', map_location=device))
+model.load_state_dict(torch.load('./unet_model.pth', map_location=device))
 model.to(device)
 model.eval()
 
@@ -24,12 +24,12 @@ transform = transforms.Compose([
 ])
 
 # 从 /content/clean_images 随机选择一张图片
-clean_images_path = '/content/clean_images'
+clean_images_path = './clean_images'
 selected_image_name = random.choice(os.listdir(clean_images_path))
 clean_image_path = os.path.join(clean_images_path, selected_image_name)
 
 # 从 /content/noisy_images 获取对应的带噪声图片
-noisy_images_path = '/content/noisy_images'
+noisy_images_path = './noisy_images'
 noisy_image_path = os.path.join(noisy_images_path, selected_image_name)
 
 # 加载图像
