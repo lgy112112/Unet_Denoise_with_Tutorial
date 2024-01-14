@@ -2,6 +2,7 @@ import os
 import cv2
 import numpy as np
 import random
+import matplotlib.pyplot as plt
 
 def calculate_mse(image1, image2):
     """
@@ -39,10 +40,25 @@ def measure_noise_level(folder1, folder2):
         raise ValueError("两个图像的尺寸不相同")
 
     mse = calculate_mse(image1, image2)
-    return mse
+    return mse, image1, image2
 
 # 示例使用
 folder1 = 'clean_images'
 folder2 = 'noisy_images'
-noise_level = measure_noise_level(folder1, folder2)
+noise_level, image1, image2 = measure_noise_level(folder1, folder2)
 print(f"噪声水平 (MSE): {noise_level}")
+# 展示两张图片
+
+plt.figure(figsize=(12, 6))
+
+plt.subplot(1, 2, 1)
+plt.imshow(image1, cmap='gray')
+plt.title('Clean Image')
+plt.axis('off')
+
+plt.subplot(1, 2, 2)
+plt.imshow(image2, cmap='gray')
+plt.title('Noisy Image')
+plt.axis('off')
+
+plt.show()

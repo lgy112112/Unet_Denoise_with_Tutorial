@@ -43,10 +43,10 @@ def process_images(origin_dir, clean_dir, noisy_dir):
             image = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)
 
             # 添加高斯噪声
-            # noisy_image = add_gaussian_noise(image)
+            noisy_image = add_gaussian_noise(image)
 
             image = resize_image(image)
-            noisy_image = resize_image(image)
+            noisy_image = resize_image(noisy_image)
 
             # 保存原始图像和带噪声的图像
             cv2.imwrite(os.path.join(clean_dir, img_name), image)
