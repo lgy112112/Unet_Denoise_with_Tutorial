@@ -74,7 +74,7 @@ class UNet(nn.Module):
 
 
 class UNetConvBlock(nn.Module):
-    def __init__(self, in_size, out_size, padding, batch_norm):
+    def __init__(self, in_size, out_size, padding, batch_norm, stride=1):
         super(UNetConvBlock, self).__init__()
         block = []
 
@@ -83,7 +83,7 @@ class UNetConvBlock(nn.Module):
         if batch_norm:
             block.append(nn.BatchNorm2d(out_size))
 
-        block.append(nn.Conv2d(out_size, out_size, kernel_size=3, padding=int(padding)))
+        block.append(nn.Conv2d(out_size, out_size, kernel_size=3, stride=stride, padding=int(padding)))
         block.append(nn.ReLU())
         block.append(nn.Dropout2d(p=0.10)) # edited
         if batch_norm:
