@@ -12,6 +12,18 @@
 
 ![image](https://github.com/lgy112112/Unet_Denoise_with_Tutorial/assets/144128974/f4858b47-e072-4b21-a68b-18123950c6c9)
 
+在高斯噪声sigma=80情况下表现优异。Matlab下测得数据，MSE似乎有些异常，带噪图像MSE应为80左右。
+| 图片类型         | MSE       | PSNR    | SSIM     |
+|-----------------|-----------|---------|----------|
+| 原始图片         | 287.276   | 19.482  | 0.654    |
+| Mean Filtered   | 258.848   | 19.881  | 0.772    |
+| Median Filtered | 262.214   | 19.841  | 0.761    |
+| BM3D Filtered   | 248.767   |20.156   |0.670     |
+| DnCNN Denoised  |255.025    |24.28	  |0.771	   |
+| Unet Denoised   |14.22      |36.60	  |0.901	   |
+
+
+
 
 # Welcome to my repository
 
@@ -32,3 +44,13 @@ Please support the recently returned Korean girl group NMIXX!
 ![image](https://github.com/lgy112112/Unet_Denoise_with_Tutorial/assets/144128974/35f215f4-ad9d-43ca-bdf8-c2784abad69f)
 
 
+The performance is excellent under Gaussian noise with sigma=80. The data measured in Matlab, MSE seems to be a bit abnormal, the MSE of the noisy image should be around 80.
+
+| Image Type       | MSE       | PSNR    | SSIM     |
+|-----------------|-----------|---------|----------|
+| Original Image  | 287.276   | 19.482  | 0.654    |
+| Mean Filtered   | 258.848   | 19.881  | 0.772    |
+| Median Filtered | 262.214   | 19.841  | 0.761    |
+| BM3D Filtered   | 248.767   |20.156   |0.670     |
+| DnCNN Denoised  | 255.025   |24.28	  |0.771	   |
+| Unet Denoised   | 14.22     |36.60	  |0.901	   |
