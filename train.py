@@ -10,7 +10,7 @@ import torch.optim as optim
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 import torch.nn as nn
-
+from VGG_init import PerceptualLoss
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
