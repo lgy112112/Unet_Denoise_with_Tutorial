@@ -10,6 +10,9 @@
 
 请多多支持最近回归的韩国女子团体NMIXX！
 
+![image](https://github.com/lgy112112/Unet_Denoise_with_Tutorial/assets/144128974/f4858b47-e072-4b21-a68b-18123950c6c9)
+
+
 # Welcome to my repository
 
 
@@ -25,4 +28,7 @@ Google Colab is highly recommended to run this notebook. Local is ok but may mee
 If you have any suggestions or difficulties, please feel free to raise them, I would be very grateful.
 
 Please support the recently returned Korean girl group NMIXX!
+
+![image](https://github.com/lgy112112/Unet_Denoise_with_Tutorial/assets/144128974/35f215f4-ad9d-43ca-bdf8-c2784abad69f)
+
 
