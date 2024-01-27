@@ -1,6 +1,6 @@
 # 欢迎来到我的仓库
 
-这个仓库使用Unet实现了降噪任务。为了方便大家操作，我在`unet_denoise_tutorial.ipynb`文件里详细写出了每一步。
+这个仓库使用Unet实现了降噪任务。为了方便大家操作，我在`unet_denoise_tutorial.ipynb`文件里详细写出了每一步，你可以在这里访问：https://colab.research.google.com/drive/1nvQuKD7NSsfMnUU7UkSLtxdNcS6q_4xT。
 
 只要执行这个文件，就可以完成数据库的导入、分类等所有操作。需要注意的是，我在这里没有对训练集和测试集进行分类。
 
