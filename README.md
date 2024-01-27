@@ -1,6 +1,7 @@
 # 欢迎来到我的仓库
 
-这个仓库使用Unet实现了降噪任务。为了方便大家操作，我在`unet_denoise_tutorial.ipynb`文件里详细写出了每一步，你可以在这里访问：<a href="https://colab.research.google.com/drive/1nvQuKD7NSsfMnUU7UkSLtxdNcS6q_4xT"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+这个仓库使用Unet实现了降噪任务。为了方便大家操作，我在`unet_denoise_tutorial.ipynb`文件里详细写出了每一步，你可以在这里访问：<a href="https://colab.research.google.com/drive/1nvQuKD7NSsfMnUU7UkSLtxdNcS6q_4xT" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+
 
 只要执行这个文件，就可以完成数据库的导入、分类等所有操作。需要注意的是，我在这里没有对训练集和测试集进行分类。
 
@@ -29,7 +30,8 @@
 
 
 
-This repository implements a denoising task using Unet. For your convenience, I have detailed each step in the `unet_denoise.ipynb` file. 
+This repository implements a denoising task using Unet. For your convenience, I have detailed each step in the `unet_denoise.ipynb` file and you can find it here <a href="https://colab.research.google.com/drive/1nvQuKD7NSsfMnUU7UkSLtxdNcS6q_4xT" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+. 
 
 By running this file, you can complete all operations such as database import and classification. 
 
